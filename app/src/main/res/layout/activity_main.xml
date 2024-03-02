@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_Sayac"
+        android:layout_width="275dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="117dp"
+        android:text="Time:0"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_Minute"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="30dp"
+        android:text="Minute:0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Sayac" />
+
+    <TextView
+        android:id="@+id/text_Hour"
+        android:layout_width="134dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
+        android:text="Hours:0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Sayac" />
+
+    <Button
+        android:id="@+id/btn_Start"
+        android:layout_width="419dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:onClick="start"
+        android:text="Start"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Minute" />
+
+    <Button
+        android:id="@+id/btn_Pause"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="62dp"
+        android:onClick="pause"
+        android:text="Pause"
+        android:textAllCaps="true"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Start" />
+
+    <Button
+        android:id="@+id/btn_Stop"
+        android:layout_width="428dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="stop"
+        android:text="Stop"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Pause" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
